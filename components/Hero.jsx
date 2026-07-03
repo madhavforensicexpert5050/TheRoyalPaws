@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "./Icon";
 import { siteConfig, telHref } from "@/data/siteConfig";
+import { withBasePath } from "@/data/basePath";
 
 export default function Hero() {
   return (
@@ -33,20 +35,20 @@ export default function Hero() {
               <Icon name="phone" className="w-4 h-4" />
               Call {siteConfig.phone}
             </a>
-            <a
+            <Link
               href="/contact"
               className="flex items-center justify-center gap-2 rounded-full border-2 border-gold/60 px-7 py-3.5 text-sm font-semibold text-gold-light transition-colors hover:bg-gold/10"
             >
               Visit Our Store
               <Icon name="arrowRight" className="w-4 h-4" strokeOnly />
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
           <div className="relative aspect-[16/10] overflow-hidden rounded-xl2 border border-gold/25 bg-royal-dark shadow-gold">
             <Image
-              src="/images/brand/home-hero.webp"
+              src={withBasePath("/images/brand/home-hero.webp")}
               alt="Premium pet store, grooming, and pet care experience at The Royal Paws in Bathinda"
               fill
               priority

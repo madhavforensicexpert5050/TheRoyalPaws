@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "./Icon";
 import Breadcrumbs from "./Breadcrumbs";
 import { siteConfig, telHref } from "@/data/siteConfig";
@@ -56,12 +57,12 @@ export default function PageHero({
               <Icon name="phone" className="w-4 h-4" />
               Call {siteConfig.phone}
             </a>
-            <a
+            <Link
               href="/contact"
               className="flex items-center justify-center gap-2 rounded-full border-2 border-gold/60 px-6 py-3 text-sm font-semibold text-gold-light transition-colors hover:bg-gold/10"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
 

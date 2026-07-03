@@ -14,6 +14,7 @@ import JsonLd from "@/components/JsonLd";
 import { services } from "@/data/services";
 import { homeFaqs } from "@/data/homeFaqs";
 import { webPageSchema } from "@/data/schema";
+import { withBasePath } from "@/data/basePath";
 
 export const metadata = {
   title: "Premium Pet Store & Grooming Services in Bathinda",
@@ -33,7 +34,7 @@ function HomeFeatureImage({ src, alt }) {
     <div className="relative mx-auto w-full max-w-xl">
       <div className="relative aspect-[16/10] overflow-hidden rounded-xl2 border border-gold/25 bg-royal-dark shadow-card">
         <Image
-          src={src}
+          src={withBasePath(src)}
           alt={alt}
           fill
           sizes="(min-width: 1024px) 448px, 100vw"

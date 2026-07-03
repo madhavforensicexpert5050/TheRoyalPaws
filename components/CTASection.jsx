@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "./Icon";
 import { siteConfig, telHref } from "@/data/siteConfig";
 
@@ -28,12 +29,12 @@ export default function CTASection({
             <Icon name="phone" className="w-4 h-4" />
             {primaryLabel}
           </a>
-          <a
+          <Link
             href={secondaryHref}
             className="flex items-center justify-center gap-2 rounded-full border-2 border-gold/60 px-7 py-3.5 text-sm font-semibold text-gold-light transition-colors hover:bg-gold/10"
           >
             {secondaryLabel}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

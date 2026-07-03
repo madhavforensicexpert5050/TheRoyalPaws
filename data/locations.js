@@ -1,3 +1,5 @@
+import { withBasePath } from "./basePath";
+
 export const locations = [
   {
     slug: "pet-store-bathinda",
@@ -5,7 +7,7 @@ export const locations = [
     metaDescription:
       "Looking for a pet store in Bathinda? Visit The Royal Paws at Baba Farid Nagar, Street No. 5 for pet food, accessories, grooming, and dog boarding. Call 7791901085.",
     h1: "Pet Store in Bathinda",
-    image: "/images/brand/location-pet-store-bathinda.webp",
+    image: withBasePath("/images/brand/location-pet-store-bathinda.webp"),
     imageAlt:
       "Premium The Royal Paws pet store entrance for pet parents in Bathinda",
     intro:
@@ -50,7 +52,7 @@ export const locations = [
     metaDescription:
       "Pet grooming in Baba Farid Nagar, Bathinda at The Royal Paws — bathing, coat care, and hygiene-focused grooming. Call 7791901085 to book a visit.",
     h1: "Pet Grooming in Baba Farid Nagar, Bathinda",
-    image: "/images/brand/location-pet-grooming-baba-farid-nagar.webp",
+    image: withBasePath("/images/brand/location-pet-grooming-baba-farid-nagar.webp"),
     imageAlt:
       "Premium pet grooming station at The Royal Paws in Baba Farid Nagar Bathinda",
     intro:
@@ -94,7 +96,7 @@ export const locations = [
     metaDescription:
       "Dog boarding in Bathinda at The Royal Paws — a safe, clean, pet-friendly dog hostel at Baba Farid Nagar. Call 7791901085 to check availability.",
     h1: "Dog Boarding in Bathinda",
-    image: "/images/brand/location-dog-boarding-bathinda.webp",
+    image: withBasePath("/images/brand/location-dog-boarding-bathinda.webp"),
     imageAlt:
       "Safe and comfortable dog boarding space at The Royal Paws in Bathinda",
     intro:
@@ -138,7 +140,7 @@ export const locations = [
     metaDescription:
       "Buy pet food in Bathinda at The Royal Paws — premium, quality-assured food for dogs and cats at Baba Farid Nagar. Call 7791901085 for availability.",
     h1: "Pet Food in Bathinda",
-    image: "/images/brand/location-pet-food-bathinda.webp",
+    image: withBasePath("/images/brand/location-pet-food-bathinda.webp"),
     imageAlt:
       "Pet food guidance counter and premium shelves at The Royal Paws Bathinda",
     intro:
@@ -182,7 +184,7 @@ export const locations = [
     metaDescription:
       "Shop pet accessories in Bathinda at The Royal Paws — toys, leashes, bedding, bowls and more for dogs and cats. Visit Baba Farid Nagar or call 7791901085.",
     h1: "Pet Accessories in Bathinda",
-    image: "/images/brand/location-pet-accessories-bathinda.webp",
+    image: withBasePath("/images/brand/location-pet-accessories-bathinda.webp"),
     imageAlt:
       "Pet accessories display with collars, leashes, toys, and beds at The Royal Paws Bathinda",
     intro:

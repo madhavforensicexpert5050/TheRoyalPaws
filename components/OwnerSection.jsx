@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Icon from "./Icon";
 import { telHref } from "@/data/siteConfig";
+import { withBasePath } from "@/data/basePath";
 
 export default function OwnerSection() {
   return (
@@ -48,7 +49,7 @@ export default function OwnerSection() {
           <div className="relative mx-auto w-full max-w-sm">
             <div className="relative aspect-[4/5] overflow-hidden rounded-xl2 border-2 border-gold/40 shadow-gold">
               <Image
-                src="/images/abhishek-goyal-owner.jpg"
+                src={withBasePath("/images/abhishek-goyal-owner.jpg")}
                 alt="Abhishek Goyal, owner of The Royal Paws in Bathinda"
                 fill
                 sizes="(min-width: 1024px) 384px, 80vw"

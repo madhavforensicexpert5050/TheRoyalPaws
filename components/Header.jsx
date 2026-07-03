@@ -6,6 +6,7 @@ import Link from "next/link";
 import Icon from "./Icon";
 import { siteConfig, telHref } from "@/data/siteConfig";
 import { mainNav } from "@/data/navigation";
+import { withBasePath } from "@/data/basePath";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function Header() {
           aria-label={siteConfig.name}
         >
           <Image
-            src={siteConfig.logo}
+            src={withBasePath(siteConfig.logo)}
             alt="The Royal Paws logo"
             width={252}
             height={63}

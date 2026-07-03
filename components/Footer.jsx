@@ -7,6 +7,7 @@ import {
   footerServiceLinks,
   footerLegalLinks,
 } from "@/data/navigation";
+import { withBasePath } from "@/data/basePath";
 
 export default function Footer() {
   return (
@@ -16,7 +17,7 @@ export default function Footer() {
           <div>
             <span className="mb-4 flex items-center bg-transparent leading-none">
               <Image
-                src={siteConfig.logo}
+                src={withBasePath(siteConfig.logo)}
                 alt="The Royal Paws logo"
                 width={252}
                 height={63}

@@ -1,3 +1,5 @@
+import { withBasePath } from "./basePath";
+
 export const services = [
   {
     slug: "premium-pet-food-bathinda",
@@ -5,7 +7,7 @@ export const services = [
     name: "Premium Pet Food",
     shortDescription:
       "Nutritious, quality-assured food for dogs and cats of every age and breed.",
-    image: "/images/brand/service-premium-pet-food.webp",
+    image: withBasePath("/images/brand/service-premium-pet-food.webp"),
     imageAlt:
       "Premium dog and cat food display inside The Royal Paws pet store in Bathinda",
     seoTitle: "Premium Pet Food in Bathinda | The Royal Paws",
@@ -60,7 +62,7 @@ export const services = [
     name: "Pet Products & Accessories",
     shortDescription:
       "Toys, leashes, bedding, grooming tools, and daily essentials for dogs and cats.",
-    image: "/images/brand/service-pet-products-accessories.webp",
+    image: withBasePath("/images/brand/service-pet-products-accessories.webp"),
     imageAlt:
       "Premium pet accessories display with toys, leashes, bowls, and beds at The Royal Paws",
     seoTitle: "Pet Products & Accessories in Bathinda | The Royal Paws",
@@ -115,7 +117,7 @@ export const services = [
     name: "Pet Grooming Services",
     shortDescription:
       "Bathing, coat care, and hygiene-focused grooming for a clean, comfortable pet.",
-    image: "/images/brand/service-pet-grooming.webp",
+    image: withBasePath("/images/brand/service-pet-grooming.webp"),
     imageAlt:
       "Comfort-focused pet grooming service scene at The Royal Paws in Bathinda",
     seoTitle: "Pet Grooming in Bathinda | The Royal Paws",
@@ -170,7 +172,7 @@ export const services = [
     name: "Dog Boarding & Dog Hostel",
     shortDescription:
       "A safe, clean, and comfortable stay environment for your dog when you are away.",
-    image: "/images/brand/service-dog-boarding-hostel.webp",
+    image: withBasePath("/images/brand/service-dog-boarding-hostel.webp"),
     imageAlt:
       "Comfortable dog boarding room for dogs at The Royal Paws in Bathinda",
     seoTitle: "Dog Boarding & Dog Hostel in Bathinda | The Royal Paws",
@@ -225,7 +227,7 @@ export const services = [
     name: "Home Delivery",
     shortDescription:
       "Pet food and product delivery to your doorstep in parts of Bathinda.",
-    image: "/images/brand/service-home-delivery.webp",
+    image: withBasePath("/images/brand/service-home-delivery.webp"),
     imageAlt:
       "Pet food and accessories home delivery handoff from The Royal Paws in Bathinda",
     seoTitle: "Pet Product Home Delivery in Bathinda | The Royal Paws",
@@ -280,7 +282,7 @@ export const services = [
     name: "Comfortable Pet-Friendly Store",
     shortDescription:
       "A clean, welcoming space in Bathinda where pets and their parents feel at home.",
-    image: "/images/brand/service-pet-friendly-store.webp",
+    image: withBasePath("/images/brand/service-pet-friendly-store.webp"),
     imageAlt:
       "Pet-friendly retail store interior for dogs, cats, and pet parents at The Royal Paws",
     seoTitle: "Pet-Friendly Store in Bathinda | The Royal Paws",
@@ -335,7 +337,7 @@ export const services = [
     name: "Dogs & Cats Care",
     shortDescription:
       "Products and services thoughtfully organised for both dogs and cats.",
-    image: "/images/brand/service-dogs-cats.webp",
+    image: withBasePath("/images/brand/service-dogs-cats.webp"),
     imageAlt:
       "Dog and cat care products in a premium pet store setting at The Royal Paws",
     seoTitle: "Dog & Cat Care Products and Services in Bathinda | The Royal Paws",
@@ -390,7 +392,7 @@ export const services = [
     name: "Offers & Discounts",
     shortDescription:
       "Current offers and discounts on pet food, accessories, and services.",
-    image: "/images/brand/service-pet-offers-discounts.webp",
+    image: withBasePath("/images/brand/service-pet-offers-discounts.webp"),
     imageAlt:
       "Premium pet food and accessory offer display at The Royal Paws in Bathinda",
     seoTitle: "Pet Store Offers & Discounts in Bathinda | The Royal Paws",
