@@ -5,7 +5,7 @@ export const metadata = {
   title: "Refund Policy | The Royal Paws",
   description:
     "Refund and exchange policy for The Royal Paws pet store in Bathinda, covering products, grooming, and dog boarding services.",
-  alternates: { canonical: "/refund-policy" },
+  alternates: { canonical: "/refund-policy/" },
 };
 
 export default function RefundPolicyPage() {
@@ -13,7 +13,7 @@ export default function RefundPolicyPage() {
     <LegalLayout
       title="Refund Policy"
       description="Our general approach to refunds and exchanges for products and services."
-      path="/refund-policy"
+      path="/refund-policy/"
       updated="July 3, 2026"
     >
       <div>

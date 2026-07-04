@@ -7,7 +7,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 import StickyCallBar from "@/components/StickyCallBar";
 import JsonLd from "@/components/JsonLd";
 import { siteConfig } from "@/data/siteConfig";
-import { localBusinessSchema, websiteSchema } from "@/data/schema";
+import { localBusinessSchema, websiteSchema, personSchema } from "@/data/schema";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -45,6 +45,20 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
+  authors: [{ name: siteConfig.owner }],
+  creator: siteConfig.owner,
+  publisher: siteConfig.name,
   verification: {
     google: "lCuoYuxOQD_s5ZQ4aigkg-YyEocDMu5jo4n4WmRpxBw",
   },
@@ -78,7 +92,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-body text-royal-dark antialiased">
-        <JsonLd data={[localBusinessSchema(), websiteSchema()]} />
+        <JsonLd data={[localBusinessSchema(), websiteSchema(), personSchema()]} />
         <AnnouncementBar />
         <Header />
         <main className="pb-16 lg:pb-0">{children}</main>

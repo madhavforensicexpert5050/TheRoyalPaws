@@ -5,18 +5,18 @@ import { locations } from "@/data/locations";
 export default function sitemap() {
   const staticRoutes = [
     "",
-    "/about",
-    "/services",
-    "/contact",
-    "/privacy-policy",
-    "/terms-and-conditions",
-    "/disclaimer",
-    "/refund-policy",
-    "/shipping-policy",
+    "/about/",
+    "/services/",
+    "/contact/",
+    "/privacy-policy/",
+    "/terms-and-conditions/",
+    "/disclaimer/",
+    "/refund-policy/",
+    "/shipping-policy/",
   ];
 
-  const serviceRoutes = services.map((s) => `/${s.slug}`);
-  const locationRoutes = locations.map((l) => `/${l.slug}`);
+  const serviceRoutes = services.map((s) => `/${s.slug}/`);
+  const locationRoutes = locations.map((l) => `/${l.slug}/`);
 
   const allRoutes = [...staticRoutes, ...serviceRoutes, ...locationRoutes];
 

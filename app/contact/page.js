@@ -16,12 +16,12 @@ export const metadata = {
   title: "Contact The Royal Paws | Pet Store in Bathinda",
   description:
     "Contact The Royal Paws in Bathinda for pet food, grooming, boarding, home delivery, and product availability. Call 7791901085 or visit Baba Farid Nagar.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact/" },
   openGraph: {
     title: "Contact The Royal Paws | Pet Store in Bathinda",
     description:
       "Call, email, or visit The Royal Paws at Baba Farid Nagar, Street No. 5, Bathinda.",
-    url: "/contact",
+    url: "/contact/",
   },
 };
 

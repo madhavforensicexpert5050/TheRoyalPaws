@@ -1,5 +1,33 @@
 import { siteConfig } from "./siteConfig";
 
+function withTrailingSlash(path) {
+  if (!path || path === "/") return "/";
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
+function publisherRef() {
+  return {
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.siteUrl,
+    logo: `${siteConfig.siteUrl}${siteConfig.logo}`,
+  };
+}
+
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteConfig.owner,
+    jobTitle: "Owner",
+    worksFor: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.siteUrl,
+    },
+  };
+}
+
 export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
@@ -39,7 +67,8 @@ export function webPageSchema({ title, description, path }) {
     "@type": "WebPage",
     name: title,
     description,
-    url: `${siteConfig.siteUrl}${path}`,
+    url: `${siteConfig.siteUrl}${withTrailingSlash(path)}`,
+    publisher: publisherRef(),
   };
 }
 
@@ -51,7 +80,7 @@ export function breadcrumbSchema(items) {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      item: `${siteConfig.siteUrl}${item.href}`,
+      item: `${siteConfig.siteUrl}${withTrailingSlash(item.href)}`,
     })),
   };
 }
@@ -95,6 +124,6 @@ export function serviceSchema({ name, description, path }) {
       "@type": "City",
       name: "Bathinda",
     },
-    url: `${siteConfig.siteUrl}${path}`,
+    url: `${siteConfig.siteUrl}${withTrailingSlash(path)}`,
   };
 }

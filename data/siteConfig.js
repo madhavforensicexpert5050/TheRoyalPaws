@@ -10,7 +10,7 @@ export const siteConfig = {
   addressRegion: "Punjab",
   postalCountry: "IN",
   city: "Bathinda",
-  siteUrl: "https://www.theroyalpaws.in",
+  siteUrl: "https://theroyalpaws.in",
   logo: "/images/the-royal-paws-logo.png",
   icon: "/images/the-royal-paws-icon.png",
   mapEmbedSrc:

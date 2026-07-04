@@ -11,12 +11,12 @@ export const metadata = {
   title: "About The Royal Paws | Premium Pet Store in Bathinda",
   description:
     "Learn about The Royal Paws, a premium pet store in Bathinda founded by Abhishek Goyal, offering pet food, accessories, grooming, boarding, and home delivery.",
-  alternates: { canonical: "/about" },
+  alternates: { canonical: "/about/" },
   openGraph: {
     title: "About The Royal Paws | Premium Pet Store in Bathinda",
     description:
       "The Royal Paws is a premium, family-run pet store in Bathinda dedicated to caring for dogs and cats with love and convenience.",
-    url: "/about",
+    url: "/about/",
   },
 };
 

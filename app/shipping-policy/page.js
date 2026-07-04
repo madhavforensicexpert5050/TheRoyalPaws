@@ -5,7 +5,7 @@ export const metadata = {
   title: "Shipping Policy | The Royal Paws",
   description:
     "Shipping and home delivery policy for The Royal Paws pet store in Bathinda. Call 7791901085 to check delivery options for your address.",
-  alternates: { canonical: "/shipping-policy" },
+  alternates: { canonical: "/shipping-policy/" },
 };
 
 export default function ShippingPolicyPage() {
@@ -13,7 +13,7 @@ export default function ShippingPolicyPage() {
     <LegalLayout
       title="Shipping Policy"
       description="How home delivery works for pet food and accessories ordered from The Royal Paws."
-      path="/shipping-policy"
+      path="/shipping-policy/"
       updated="July 3, 2026"
     >
       <div>

@@ -5,7 +5,7 @@ export const metadata = {
   title: "Disclaimer | The Royal Paws",
   description:
     "Disclaimer for The Royal Paws pet store in Bathinda regarding product, grooming, and boarding information shared on this website.",
-  alternates: { canonical: "/disclaimer" },
+  alternates: { canonical: "/disclaimer/" },
 };
 
 export default function DisclaimerPage() {
@@ -13,7 +13,7 @@ export default function DisclaimerPage() {
     <LegalLayout
       title="Disclaimer"
       description="Important information about how to interpret the content on this website."
-      path="/disclaimer"
+      path="/disclaimer/"
       updated="July 3, 2026"
     >
       <div>

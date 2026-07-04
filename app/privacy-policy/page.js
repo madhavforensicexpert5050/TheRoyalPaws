@@ -5,7 +5,7 @@ export const metadata = {
   title: "Privacy Policy | The Royal Paws",
   description:
     "Read the privacy policy for The Royal Paws, a pet store in Bathinda, covering how customer information is collected and used.",
-  alternates: { canonical: "/privacy-policy" },
+  alternates: { canonical: "/privacy-policy/" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
     <LegalLayout
       title="Privacy Policy"
       description="How The Royal Paws handles information shared by customers and website visitors."
-      path="/privacy-policy"
+      path="/privacy-policy/"
       updated="July 3, 2026"
     >
       <div>

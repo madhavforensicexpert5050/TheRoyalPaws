@@ -12,12 +12,12 @@ export const metadata = {
   title: "Pet Care Services in Bathinda | The Royal Paws",
   description:
     "Explore all pet care services from The Royal Paws in Bathinda — premium pet food, accessories, grooming, dog boarding, home delivery, and more.",
-  alternates: { canonical: "/services" },
+  alternates: { canonical: "/services/" },
   openGraph: {
     title: "Pet Care Services in Bathinda | The Royal Paws",
     description:
       "Premium pet food, accessories, grooming, boarding, home delivery, and offers — all available at The Royal Paws in Bathinda.",
-    url: "/services",
+    url: "/services/",
   },
 };
 

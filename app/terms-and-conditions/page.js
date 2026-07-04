@@ -5,7 +5,7 @@ export const metadata = {
   title: "Terms and Conditions | The Royal Paws",
   description:
     "Terms and conditions for using the website and services of The Royal Paws, a pet store in Bathinda.",
-  alternates: { canonical: "/terms-and-conditions" },
+  alternates: { canonical: "/terms-and-conditions/" },
 };
 
 export default function TermsPage() {
@@ -13,7 +13,7 @@ export default function TermsPage() {
     <LegalLayout
       title="Terms and Conditions"
       description="Please read these terms carefully before using our website or visiting our store."
-      path="/terms-and-conditions"
+      path="/terms-and-conditions/"
       updated="July 3, 2026"
     >
       <div>
